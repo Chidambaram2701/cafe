@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Cozy Café</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url("cafe-background.jpg");
+            background-size: cover;
+        }
+        #forms-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .form-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 350px;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .form-box h2 {
+            text-align: center;
+            color: #4B2E2B;
+        }
+
+        .form-box input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4B2E2B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-box button:hover {
+            background-color: #5e4a2f;
+        }
+
+        .form-box a {
+            font-size: 0.9em;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #4B2E2B;
+        }
+
+        footer {
+            background-color: #4B2E2B;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 60px;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cozy Café</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <div id="forms-container">
+                <div class="form-box">
+            <h2>Login</h2>
+                <label for="name2"><b>Name</b></label>
+                <input type="text" id="name2" name="name" placeholder="Enter your name" required>
+
+                <label for="email2"><b>Email</b></label>
+                <input type="email" id="email2" name="email" placeholder="Enter your email" required>
+
+                <label for="password2"><b>Password</b></label>
+                <input type="password" id="password2" name="password" placeholder="Enter new password" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="form-box">
+            <h2>Sign Up</h2>
+                <label for="name1"><b>Name</b></label>
+                <input type="text" id="name1" name="name" placeholder="Enter your name" required>
+
+                <label for="email1"><b>Email</b></label>
+                <input type="email" id="email1" name="email" placeholder="Enter your email" required>
+
+                <label for="password1"><b>Password</b></label>
+                <input type="password" id="password1" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Submit</button>
+
+                <a href="#">Forgot / Change Password?</a>
+                <span style="display: block; text-align: center;">Or</span>
+                <a href="#">Already have an account? Login</a>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: cozycafe@example.com</p>
+            <p>Phone: +91-9876543210</p>
+            <p>Address: 123 Coffee Street, Chennai</p>
+        </div>
+    </footer>
+
+</body>
+</html>
